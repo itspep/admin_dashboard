@@ -16,7 +16,7 @@
     display: grid;
     grid-column: 2 / -1; /* Span across all columns */
     background-color: blue;
-    
+    height: 70px;
 }
 
 .sidebar{

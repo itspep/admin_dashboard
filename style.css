@@ -43,16 +43,160 @@ img{
     display: grid;
 }
 
-.header{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.top_header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 70%;
 }
 
-.bottom_header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* Left & Right sections */
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.right-side{
+    margin-right: 50px;
+}
+.left-side{
+    margin-left: 50px;
+}
+
+/* Search bar */
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 25px;
+    width: 500px; 
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* User section */
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+
+.user h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Right-side user & buttons */
+.right-side {
+    align-items: flex-end;
+}
+
+/* Notification bell */
+.notification-bell {
+    font-size: 22px;
+    color: #666;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.notification-bell:hover {
+    color: #000;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 20px;
+
+    width: 50%;
+}
+
+.buttons .new{
+width: 150px;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Left-side user container */
+.user {
+    display: flex;
+    align-items: center; /* Keep image and text in line */
+    gap: 10px;
+}
+
+/* User text container */
+.user-text {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+/* User text styles */
+.user-text p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+
+.user-text h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Profile image */
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }

@@ -41,5 +41,18 @@ img{
 
 .sidebar{
     display: grid;
+}
 
+.header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.top_header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom_header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

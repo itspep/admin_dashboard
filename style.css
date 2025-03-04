@@ -166,13 +166,13 @@
 .content{
     display:grid;
     grid-template-columns: 3fr 1fr;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .main_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 0px;
+    gap: 20px;    
 }
 
 img{
